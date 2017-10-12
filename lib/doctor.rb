@@ -16,4 +16,10 @@ class Doctor
     @appointments
   end
 
+  def patients
+    appointments.collect do |patient|
+      patient
+    end
+  end
+
 end
